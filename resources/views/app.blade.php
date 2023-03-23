@@ -8,6 +8,9 @@
 	@vite(['resources/css/app.css', 'resources/js/app.jsx'])
 </head>
 <body>
-	<div id="app"></div>
+	<!-- <div id="app"></div> -->
+	<h1 class="text-3xl font-bold underline">
+		Hello world!
+	</h1>
 </body>
 </html>
