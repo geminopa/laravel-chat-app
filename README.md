@@ -29,3 +29,9 @@
  - チャット欄に画像を貼ることができる
  - チャット欄に動画を貼ることができる
 
+## DB
+
+ - Users
+ - Groups
+ - GroupMembers
+ - ChatMessages
