@@ -25,7 +25,10 @@ const App = () => {
 						<Link to="/">Top</Link>
 					</li>
 					<li>
-						<Link to="/signup">SignUp</Link>
+						<Link href="/signup">アカウント登録</Link>
+					</li>
+					<li>
+						<Link href="/login">ログイン</Link>
 					</li>
 					<li>
 						<Link to="/mypage">MyPage</Link>
