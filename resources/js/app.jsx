@@ -6,7 +6,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 import { TopPage } from './components/TopPage';
 import SignUp from './pages/SignUp';
-import { MyPage } from './components/MyPage';
+import Login from './pages/Login';
+import { mainListItems, secondaryListItems } from './components/Sidebar';
 import { PostPage } from './components/PostPage';
 
 const App = () => {
@@ -17,10 +18,19 @@ const App = () => {
 				<Routes>
 					<Route path="/" element={<TopPage />} />
 					<Route path="/signup" element={<SignUp />} />
-					<Route path="/mypage" element={<MyPage />} />
+					<Route path="/login" element={<Login />} />
 					<Route path="/posts" element={<PostPage />} />
 				</Routes>
-				<ul>
+				<div>
+					<Link to="/">Top</Link>
+					<Link to="/signup">アカウント登録</Link>
+					<Link to="/login">ログイン</Link>
+				</div>
+				<div>
+					<mainListItems />
+					<secondaryListItems />
+				</div>
+				{/* <ul>
 					<li>
 						<Link to="/">Top</Link>
 					</li>
@@ -36,7 +46,7 @@ const App = () => {
 					<li>
 						<Link to="/posts">Post</Link>
 					</li>
-				</ul>
+				</ul> */}
 			</BrowserRouter>
 		</div>
 	);
